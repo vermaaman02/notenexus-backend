@@ -4,6 +4,16 @@ import {
   NoteLike,
   NoteRating
 } from "./shared/schema.js";
+import type {
+  UserType,
+  UpsertUser,
+  InsertNote,
+  NoteType,
+  NoteWithUploader,
+  UserStats,
+  InsertNoteLike,
+  InsertNoteRating
+} from "../shared/schema";
 import { connectToDatabase } from "./db";
 import mongoose from "mongoose";
 

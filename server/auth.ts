@@ -2,6 +2,7 @@ import bcrypt from 'bcryptjs';
 import { storage } from './storage.js';
 // Type-only: import type { SignupData, LoginData } from '../shared/schema';
 import { v4 as uuidv4 } from 'uuid';
+import type { SignupData, LoginData } from '../shared/schema';
 
 export class AuthService {
   async signup(userData: SignupData) {
