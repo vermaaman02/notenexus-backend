@@ -3,7 +3,7 @@ import {
   Note,
   NoteLike,
   NoteRating
-} from "./shared/schema.js";
+} from "../shared/schema.js";
 import type {
   UserType,
   UpsertUser,
