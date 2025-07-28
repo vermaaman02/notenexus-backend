@@ -7,7 +7,10 @@ import cors from "cors";
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://zealous-mud-0c4ecc40f.2.azurestaticapps.net"
+  ],
   credentials: true,
 }));
 app.use(express.json());
